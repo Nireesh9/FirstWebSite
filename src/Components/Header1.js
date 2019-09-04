@@ -15,6 +15,7 @@ const styles = {
   },
   grow: {
     flexGrow: 1,
+    
   },
   menuButton: {
     marginLeft: -12,
@@ -34,9 +35,20 @@ function ButtonAppBar(props) {
         <Toolbar>
          
           <Typography variant="h6" className={classes.grow}>
-          {head}
+          Home
           </Typography>
-          
+          <Typography variant="h6" className={classes.grow}>
+          Our Clients
+          </Typography>
+          <Typography variant="h6" className={classes.grow}>
+          Our Developers
+          </Typography>
+          <Typography variant="h6" className={classes.grow}>
+          Contact us
+          </Typography>
+          <Link to ='/Login'>
+          <button type="button" styles={{width:'100px', height:'30px'}}>Login</button>
+          </Link>
         </Toolbar>
       </AppBar>
     </div>
